@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  padding: 2rem;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+.imageWrapper {
+  position: relative;
+  width: 38%;
+  height: 22rem;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.imageWrapper>img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.right > :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: var(--gray);
+  padding: 10px 0px;
+}
+.size {
+  display: flex;
+  gap: 3rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 20px 0px;
+}
+.SizeVariant {
+  display: flex;
+  gap: 0.6rem;
+  font-weight: normal;
+  color: var(--themeRed);
+  font-size: 0.8rem;
+}
+.SizeVariant > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 1.5rem;
+  border: 2px solid var(--themeRed);
+  border-radius: 2rem;
+  transition: background 0.5s ease-in;
+}
+
+.SizeVariant > div:hover {
+  cursor: pointer;
+  background: var(--themeRed);
+  color: #fff;
+}
+
+.quatity {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 600;
+  gap: 3rem;
+  padding: 10px 0px;
+}
+
+.counter {
+  display: flex;
+  margin-top: 13px;
+  gap: 1rem;
+}
+
+
+.btn{
+    font-weight: normal;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+.btn:hover{
+    background-color: rgb(224, 139, 139);
+}
+.selected{
+
+  cursor: pointer;
+  background: var(--themeRed);
+  color: #fff;
+}
